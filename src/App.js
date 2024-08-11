@@ -19,13 +19,13 @@ function App() {
       style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
       <BrowserRouter>
-        <Header />
         <Routes style={{ flex: "1" }}>
           <Route path="/" element={<Home />} />
           <Route
             path="/home"
             element={
               <Auth>
+                <Header />
                 <Body />
               </Auth>
             }
@@ -34,6 +34,7 @@ function App() {
             path="/home/detail/:id"
             element={
               <Auth>
+                <Header />
                 <Detail />
               </Auth>
             }
@@ -42,6 +43,7 @@ function App() {
             path="/cart"
             element={
               <Auth>
+                <Header />
                 <Cart />
               </Auth>
             }
