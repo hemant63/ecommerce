@@ -6,25 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 function Crousel() {
   
-  const [data, setData]=useState();
-
-  const handleGetProducts=()=>{
-    try {
-      fetch(`https://fakestoreapi.com/products`)
-        .then((res) => res.json())
-        .then((json) => {
-          setData(json);
-        });
-    } catch (error) {
-      alert(error);
-    }
-  };
-
-  useEffect(() => {
-    handleGetProducts();
-  }, []);
-
-  console.log(data,"list")
 
 // Test Code
 var items = [
@@ -52,7 +33,8 @@ function Item(props)
 {
   const navigate = useNavigate();
   return(
-    <Paper>
+    <Paper className="container">
+      <button className="register" onClick={()=>{navigate("/login")}}><span>LogIn</span></button>
       <img className="banner" src={props.item.url} alt="img123" />
     </Paper>
   )

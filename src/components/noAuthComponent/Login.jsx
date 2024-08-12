@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { signIn } from "../../action";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const initialValues = {
   email: "",
@@ -57,6 +58,8 @@ const Login = () => {
                 <button className="button" type="submit">
                   Submit
                 </button>
+                <br />
+                <p>New User?<Button onClick={()=>{navigate("/register")}} >Register</Button> </p>
               </fieldset>
             </Form>
           )}

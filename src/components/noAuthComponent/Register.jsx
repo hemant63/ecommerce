@@ -4,6 +4,7 @@ import { signupValidation } from "../validation/SignupValidation";
 import { useDispatch } from "react-redux";
 import { register } from "../../action";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const initialValues = {
   name: "",
@@ -57,6 +58,8 @@ const Register = () => {
               <button type="submit" className="button">
                 Submit
               </button>
+              <br />
+              <p>Already Registered?<Button onClick={()=>{navigate("/login")}} >login</Button> </p>
             </fieldset>
           </Form>
         )}

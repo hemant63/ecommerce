@@ -14,7 +14,24 @@ function Footer() {
         flexShrink: "0",
       }}
     >
-      <h1 style={{ color: "grey" }}>Flipkart</h1>
+      <div>
+        <h1 style={{ color: "grey" }}>Flipkart</h1>
+        <h3 style={{color: "grey"}}>Social</h3>
+        <span style={{display:"flex"}}>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="icons/linkedin.png" alt="linkedin" />
+          </a>
+          <a href="https://facebook.com/" target="_blank">
+            <img src="icons/facebook-app-symbol.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="icons/instagram.png" alt="instagram" />
+          </a>
+          <a href="mailto:palhemant663@gmail.com">
+            <img src="" alt="email" />
+          </a>
+        </span>
+      </div>
       <div>
         <h3 style={{ color: "gray" }}>Product</h3>
         <span style={{ color: "whitesmoke" }}>
