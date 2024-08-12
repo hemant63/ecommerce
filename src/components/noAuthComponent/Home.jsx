@@ -14,7 +14,7 @@ const Home = () => {
         </div>
       </div>
       <div className="bundle">
-        <h2>Best Deals</h2>
+        <h2>BestSellers</h2>
         <div className="description">
           <img className="set" src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/q/j/8/-original-imah23cqtprzgeje.jpeg?q=70" alt="campus" />
           <img className="set" src="https://rukminim2.flixcart.com/image/612/612/korijrk0/top/y/d/s/l-sftops40039-sassafras-original-imag35ctanxhhz8u.jpeg?q=70" alt="top" />
